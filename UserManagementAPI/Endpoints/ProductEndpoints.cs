@@ -8,12 +8,15 @@ public static class ProductEndpoints
 {
     public static void MapProductEndpoints(this WebApplication app)
     {
+        // get all products
         app.MapGet("/products", async (AppDbContext db) =>
             await db.Products.ToListAsync());
 
+        // get product by id
         app.MapGet("/products/{id}", async (Guid id, AppDbContext db) =>
             await db.Products.FindAsync(id) is Product p ? Results.Ok(p) : Results.NotFound());
 
+        // create product
         app.MapPost("/products", async (Product product, AppDbContext db) =>
         {
             product.Id = Guid.NewGuid();
@@ -22,6 +25,7 @@ public static class ProductEndpoints
             return Results.Created($"/products/{product.Id}", product);
         });
 
+        // update product
         app.MapPut("/products/{id}", async (Guid id, Product input, AppDbContext db) =>
         {
             var product = await db.Products.FindAsync(id);
@@ -34,7 +38,7 @@ public static class ProductEndpoints
             await db.SaveChangesAsync();
             return Results.Ok(product);
         });
-
+        // delete product
         app.MapDelete("/products/{id}", async (Guid id, AppDbContext db) =>
         {
             var product = await db.Products.FindAsync(id);
