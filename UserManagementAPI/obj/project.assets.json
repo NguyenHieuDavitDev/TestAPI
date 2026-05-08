@@ -3540,11 +3540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/minhhieu/Documents/test/1/TestAPI/UserManagementAPI/UserManagementAPI.csproj",
+      "projectUniqueName": "/Users/minhhieu/Documents/DOTNET/UserManagementAPI/UserManagementAPI.csproj",
       "projectName": "UserManagementAPI",
-      "projectPath": "/Users/minhhieu/Documents/test/1/TestAPI/UserManagementAPI/UserManagementAPI.csproj",
+      "projectPath": "/Users/minhhieu/Documents/DOTNET/UserManagementAPI/UserManagementAPI.csproj",
       "packagesPath": "/Users/minhhieu/.nuget/packages/",
-      "outputPath": "/Users/minhhieu/Documents/test/1/TestAPI/UserManagementAPI/obj/",
+      "outputPath": "/Users/minhhieu/Documents/DOTNET/UserManagementAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/minhhieu/.nuget/NuGet/NuGet.Config"
