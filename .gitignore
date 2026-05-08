@@ -4,22 +4,16 @@
 .env
 .env.*
 !.env.example
+**/appsettings.Development.json
 
 # .NET build output
 **/bin/
 **/obj/
 
-
-
-bin/
-obj/
-
 .vs/
 *.user
 *.suo
 
-appsettings.Development.json
-
-wwwroot/uploads/
+**/wwwroot/uploads/
 
 node_modules/
