@@ -1,0 +1,10 @@
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# .NET build output
+**/bin/
+**/obj/
