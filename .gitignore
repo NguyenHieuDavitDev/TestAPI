@@ -1,0 +1,19 @@
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+
+# .NET build output
+**/bin/
+**/obj/
+
+.vs/
+*.user
+*.suo
+
+**/wwwroot/uploads/
+
+node_modules/
